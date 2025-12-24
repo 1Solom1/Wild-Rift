@@ -1,0 +1,1242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Urban Bite - Restaurant</title>
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Audiowide&family=Caprasimo&family=Comic+Relief:wght@400;700&family=Delius&family=Galindo&family=Nosifer&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Oldenburg&family=Orbit&family=Rowdies:wght@300;400;700&family=Rubik+Dirt&family=Rubik+Moonrocks&family=Rubik:ital,wght@0,300..900;1,300..900&family=Russo+One&display=swap');
+      /* تخصيصات */
+      .navbar-brand h3 {
+        margin: 0;
+        font-weight: bold;
+        letter-spacing: 1px;
+      }
+      
+      .nav-link {
+        font-weight: 500;
+        transition: color 0.3s;
+        padding: 0.5rem 1rem !important;
+      }
+      
+      .nav-link:hover {
+        color: #b98b02 !important;
+      }
+      .hhhh
+      {
+        font-family: "Audiowide", sans-serif;
+      }
+      .dropdown-menu {
+        background-color: #343a40;
+        border: 1px solid #ffc107;
+      }
+      
+      .dropdown-item {
+        color: #fff;
+        transition: all 0.3s;
+      }
+      
+      .dropdown-item:hover {
+        background-color: #150101;
+        color: #ffffff;
+        padding-left: 1.5rem;
+      }
+      
+      .carousel-item img {
+        height: 90vh;
+        object-fit: cover;
+        filter: brightness(0.9);
+      }
+      
+      .btn-outline-warning:hover {
+        background-color: #ffc107;
+        color: #000;
+      }
+      .con{
+        width: 300px;
+        transition: 1s;
+      }
+      .con11{
+        margin-right: 50px;
+      }
+      .con:hover
+      {
+        transform: scale(0.9,0.9);
+        transition: 1s;
+      }
+      .coo{
+        color: #000000;
+      }
+      .icons .i1:hover
+      {
+        color: rgb(121, 164, 197);
+      }
+      .icons .i2:hover
+      {
+        color: rgb(121, 164, 197);
+      }
+      .icons .i3:hover
+      {
+        color: rgb(82, 152, 83);
+      }
+
+      .icons .i4:hover
+      {
+        color: rgb(121, 164, 197);
+      }
+      .nnnn{
+font-family: "Rowdies", sans-serif;
+      }
+      .special-card {
+    position: relative;
+}
+
+.special-card::before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(126, 126, 126, 0.1);
+    opacity: 0;
+    transition: all 0.8s ease;
+    z-index: 1;
+}
+
+.special-card:hover::before {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
+.special-card::after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    left: 0;
+    top: 0;
+    background: rgba(241, 231, 201, 0.1);
+    opacity: 0;
+    transition: all 0.8s ease;
+    z-index: 1;
+}
+
+.special-card:hover::after {
+    height: 100%;
+    width: 100%;
+    opacity: 1;
+}
+
+.clip-slant {
+    overflow: hidden;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%);
+    transition: transform 0.4s ease-in-out;
+    
+}
+
+.clip-rect {
+    overflow: hidden;
+    position: relative;
+    height: 330px;
+}
+
+.clip-slant2 {
+    overflow: hidden;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 82% 100%, 0 100%);
+    transition: transform 0.4s ease-in-out;
+}
+
+
+.special-image {
+    width: 100%;
+    height: 100%;
+    min-height: 350px;
+    width: 400px;
+    /* min-height: 100%; */
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s ease-in-out;
+   
+}
+
+.special-image1 {
+    background-image: url(images/league-of-legends-lol-count-vladimir-wallpaper-55722_w635.webp);
+    background-size: cover;
+    margin-left: -30px;
+}
+
+.special-image2 {
+    background-image: url(images/leguage-of-legens-sett-league-of-legends-sett-dragon-de-odsidiana-hd-wallpaper-preview.jpg);
+    background-size: cover;
+    padding-right: 20px;
+    width: 400px;
+
+}
+
+.special-image3 {
+    background-size: cover;
+    background-image: url(images/sion-lol-splash-art-uhdpaper.com-4K-462-wp.thumbnail.jpg);
+    background-position: center;
+    margin-left: -30px;
+
+}
+
+.special-image4 {
+    background-size: cover;
+    background-image: url(images/wp12970206.jpg);
+    
+}
+
+.card:hover .special-image {
+    transform: scale(1.05);
+}
+
+.special-btn:hover {
+    background-color: rgb(165, 165, 165);
+    border: none;
+}
+
+.custom-card {
+    transition: transform 0.7s ease;
+    cursor: pointer;
+}
+
+.custom-card:hover {
+    transform: scale(0.9);
+}
+.wider-container {
+    max-width: 1200px;
+}
+.special-card2{
+    transition: 0.5s;
+}
+.special-card2:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+}
+.navbar-nav a:focus,
+.dropdown-item:focus {
+    outline: 2px solid #b1bc7b;
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+/* خاص بزرار القائمة المنسدلة */
+.dropdown-toggle:focus {
+    outline: 3px solid #d1cc8a;
+    outline-offset: 3px;
+} 
+    </style>
+  </head>
+  <body style="height: 7000px; position: relative;     background: linear-gradient(90deg, #2e2e2e, #2d2929);">
+<div  style="position: absolute; width: 40px; height: 260px; position: fixed; right: 0; z-index: 105; margin-top: 200px;border-radius: 20px; color:  rgb(127, 118, 118); font-size: xx-large;  text-align: center;" class="icons">
+  <i class="fa-brands fa-square-facebook i1" style="padding-bottom: 25px;"></i>
+<i class="fa-brands fa-square-twitter i2" style="padding-bottom: 25px;"></i>
+<i class="fa-brands fa-square-whatsapp i3" style="padding-bottom: 25px;"></i>
+<i class="fa-brands fa-linkedin i4" style="padding-bottom: 25px;"></i>
+
+</div>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-.5"style="position: relative;
+top: 0;
+position: fixed;
+z-index: 100; top=0; width: 100%;background: linear-gradient(
+    to right,
+    rgba(0,0,0,0.9),
+    rgba(20,0,0,0.6),
+    rgba(0,0,0,0.2)
+);">
+    <!-- Logo Section -->
+    <div class="d-flex align-items-center">
+      <a class="navbar-brand" href="#">
+        <img src="images/6de160077531071a7b67ea542804e3-removebg-preview.png" alt="Logo" style="width:130px; height: 50px;" class="rounded-circle ">
+      </a>
+      <a style="border-right: 2.5px solid  white; padding-right: 13px;" class="navbar-brand text-warning fs-3 border-end border-secondary pe-3 me-3" href="#">
+        <h3 class="mb-0 hhhh" >Wild Rift</h3>
+      </a>
+    </div>
+
+    <!-- Toggle Button -->
+    <button class="navbar-toggler border-warning" type="button" data-toggle="collapse" data-target="#navbarContent">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navbar Content -->
+    <div class="collapse navbar-collapse justify-content-between" id="navbarContent">
+      <!-- Navigation Links -->
+      <ul class="navbar-nav nnnn">
+        <li  class="nav-item ni" >
+          <a class="nav-link text-light" href="#">
+            <i class="fas fa-home mr-1"></i> Home
+          </a>
+        </li>
+        <li class="nav-item ni">
+          <a class="nav-link text-light" href="#">About Us</a>
+        </li>
+        <li class="nav-item dropdown ni">
+          <a class="nav-link dropdown-toggle text-light " href="#" id="navbardrop" data-toggle="dropdown">
+            Menu
+          </a>
+          <div class="dropdown-menu" style="background-color: #50525f;">
+            <a class="dropdown-item" href="#">
+                <i class="fa-brands fa-sword" style=""></i>Zed
+            </a>
+            <a class="dropdown-item" href="#">
+              <i class="fa-brands fa-sword"></i>Darius
+            </a>
+            <a class="dropdown-item" href="#">
+              <i class="fa-brands fa-flower"></i>Yasuo
+            </a>
+            <div style="width: 100%; height: 1px; border: 1px dotted rgb(49, 1, 1);"></div>
+                        <a class="dropdown-item" href="#">
+                <i class="fa-brands fa-sword" style=""></i>Viego
+            </a>
+            <a class="dropdown-item" href="#">
+              <i class="fa-brands fa-sword"></i>Lux
+            </a>
+            <a class="dropdown-item" href="#">
+              <i class="fa-brands fa-flower"></i>Caitlyn
+            </a>
+          </div>
+        </li>
+        <li class="nav-item ni">
+          <a class="nav-link text-light " href="#">Contact</a>
+        </li>
+      </ul>
+
+      <!-- Search Form -->
+      <form class="form-inline">
+        <div class="input-group">
+          <input class="form-control border-warning" type="text" placeholder="Search menu...">
+          <div class="input-group-append">
+            <button class="btn btn-warning" type="submit">
+              <i class="fas fa-search"></i>
+            </button>
+          </div>
+        </div>
+<button class="btn btn-outline-warning ml-3" type="button" id="loginBtn">
+    <i class="fas fa-sign-in-alt mr-2 log"></i>Login
+</button>
+
+<!-- نافذة تسجيل الدخول -->
+<div id="loginModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.5); z-index: 1000; justify-content: center; align-items: center;">
+    <div style="background:linear-gradient(135deg,rgb(130, 130, 130),rgb(125, 125, 125)); padding: 20px; border-radius: 5px; width: 90%; max-width: 400px;">
+        <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px;">
+            <h3 style="margin: 0; color: #000000;">Log in </h3>
+            <button id="closeModal" style="background: none; border: none; font-size: 20px; cursor: pointer;">&times;</button>
+        </div>
+        
+        <form id="loginForm">
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px;">Email address</label>
+                <input type="email" style="background-color: #c5c5c5; width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;" placeholder="Enter Your Email" required>
+            </div>
+            
+            <div style="margin-bottom: 15px;">
+                <label style="display: block; margin-bottom: 5px;">Password</label>
+                <input type="password" style="background-color: #c5c5c5; width: 100%; padding: 8px; border: 1px solid #ddd; border-radius: 4px;" placeholder="****" required>
+            </div>
+            
+            <div style="margin-bottom: 15px; display: flex; align-items: center;">
+                <input type="checkbox" id="remember" style="margin-left: 5px;">
+                <label for="remember">Remember me</label>
+            </div>
+            
+            <button type="submit" style="background-color: #ffc107; color: #212529; border: none; padding: 10px 20px; width: 100%; border-radius: 4px; cursor: pointer;">
+                 Log in
+            </button>
+        </form>
+    </div>
+</div>
+      </form>
+    </div>
+  </nav>
+
+  <!-- Carousel -->
+  <div id="demo" class="carousel slide" style="margin-top: 75px;" data-ride="carousel">
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+
+    <!-- Slides -->
+    <div class="carousel-inner">
+      <div class="carousel-item active ">
+        <img src="images/681587.png"  class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block " style="">
+          <h2 class="text-warning" style="color: #000;">Zed</h2>
+          <p class="lead ">One Shot Champion</p>
+          <button class="btn btn-warning btn-lg">Read More</button>
+        </div>
+      </div>
+      <div class="carousel-item coo">
+        <img src="images/league-of-legends-lol-darius-wallpaper-1920x1200_6.jpg" style="object-position: top;" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block"style="">
+          <h2 class="text-warning">Darius</h2>
+          <p class="lead">The Darkness</p>
+                    <button class="btn btn-warning btn-lg">Read More</button>
+
+        </div>
+      </div>
+      <div class="carousel-item coo">
+        <img src="images/1347718.jpeg"  style="object-position: top;" class="d-block w-100">
+        <div class="carousel-caption d-none d-md-block"style="">
+          <h2 class="text-warning">Yasuo</h2>
+          <p class="lead">The storm man</p>
+                    <button class="btn btn-warning btn-lg">Order Now</button>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+  <div class="jumbotron jumbotron-fluid" style="height: 190px;padding-top:30px; padding-left:0px; margin-bottom: 0px;    background:linear-gradient(135deg,rgb(66, 66, 66),rgb(45, 42, 42));    box-shadow: 1px 1px 5px 2px rgb(91, 87, 87); color: #b4b4b4; ">
+  <div class="container-fluid" >
+    <h3 style="color: rgb(203, 199, 140);">Welcome</h3>      
+    <p>Wild Rift is the mobile and console adaptation of the popular PC game League of Legends, developed and published by Riot Games.</p>
+          <button class="btn btn-warning  btn-lg">Learn Now</button>
+  </div>
+</div>
+<hr>
+ <div class="jumbotron jumbotron-fluid" style="height: 180px;padding-top:13px; padding-left:0px;background:linear-gradient(135deg,rgb(66, 66, 66),rgb(45, 42, 42));    box-shadow: 1px 1px 5px 2px rgb(91, 87, 87); color: #b4b4b4; "">
+  <div class="container-fluid">
+    <h3 style="color:  rgb(203, 199, 140); text-align: center; padding-top: 60px;">The Most Famous Dishes In Our Restaurant</h3>      
+    
+  </div>
+</div>
+<div id="accordion">
+
+  <div  class="card"style="border:none; margin-bottom:1px;" >
+    <div class="card-header"style=" background:linear-gradient(135deg,rgb(66, 66, 66),rgb(45, 42, 42));">
+      <a class="card-link" data-toggle="collapse" href="#collapseOne"style="color:  rgb(220, 220, 220);">
+        Yasuo
+      </a>
+    </div>
+    <div id="collapseOne" class="collapse " data-parent="#accordion">
+      <div class="card-body"style="background-color: rgba(78, 66, 66, 0.5) ;">
+        A master of the wind. One mistake against him can cost you everything. Fast, fearless, and unstoppable when he gets momentum. 🌪️⚔️
+      </div>
+    </div>
+  </div>
+
+  <div class="card"style="border:none; margin-bottom:1px;">
+    <div class="card-header" style="background:linear-gradient(135deg,rgb(66, 66, 66),rgb(45, 42, 42));">
+      <a class="collapsed card-link" data-toggle="collapse" href="#collapseTwo"style="color:  rgb(220, 220, 220);">
+        Darius
+      </a>
+    </div>
+    <div id="collapseTwo" class="collapse" data-parent="#accordion">
+      <div class="card-body"style="background-color: rgba(78, 66, 66, 0.5)  ;">
+        Pure strength and dominance. A single misstep turns into an execution. Once his stacks are full, there’s no escape. 🩸🪓
+      </div>
+    </div>
+  </div>
+
+  <div class="card"style="border:none; margin-bottom:1px;">
+    <div class="card-header"style="background:linear-gradient(135deg,rgb(66, 66, 66),rgb(45, 42, 42));">
+      <a class="collapsed card-link" data-toggle="collapse" href="#collapseThree" style="color: rgb(220, 220, 220);">
+        Zed
+      </a>
+    </div>
+    <div id="collapseThree" class="collapse" data-parent="#accordion">
+      <div class="card-body"style=" background-color: rgba(78, 66, 66, 0.5)  ;">
+        The shadow strikes before you even realize it. Silent, deadly, and always disappears after the kill.
+      </div>
+    </div>
+  </div>
+
+</div>
+<hr>
+<div class="jumbotron jumbotron" style="height: 100px;background:linear-gradient(135deg,rgb(66, 66, 66),rgb(45, 42, 42)); box-shadow: 1px 1px 5px 2px rgb(91, 87, 87); margin-bottom: 2px; margin: 3px; padding-top:0px; margin-bottom: 0px; padding-left:0px;">
+  <div class="container-fluid">
+    <h3 style="color: rgb(196, 188, 127); text-align: center; padding-top: 30px;">Translate from Arabic to English</h3>      
+    
+  </div>
+</div>
+  <div class="jumbotron jumbotron" style="height: 330px;background:linear-gradient(135deg,rgb(52, 52, 48),rgb(80, 80, 80)); padding-top:-30px; margin: 0px 3px 0px 3px; padding-left:0px; margin-bottom: 0px;">
+  <div class="container-fluid">
+    <h3 style="color: rgb(218, 155, 8); display: inline;">Write And Translate    <h3 style="display: inline-block; color: #acacac;">Press Here</h3></h3>   <br>   
+<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">
+  Copy
+</button>
+
+<!-- The Modal -->
+<div  class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content" style="background:linear-gradient(135deg,rgb(130, 130, 130),rgb(80, 80, 80)); transition: .8s;">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 style="color: rgb(233, 231, 182);font-size: x-large;" class="modal-title">Wild Rift</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div style="color: white;" class="modal-body">
+        The message copied
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning text-dark" data-dismiss="modal">ok</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+          <div class="form-group">
+  <label for="comment"></label>
+  <textarea class="form-control" rows="5" id="comment" style="background-color: #949393; color: #1e1e17;"placeholder="Translate" ></textarea>
+</div>
+  </div>
+</div>
+<hr>
+<div class="jumbotron jumbotron" style="height: 100px;background:linear-gradient(135deg,rgb(66, 66, 66),rgb(45, 42, 42)); box-shadow: 1px 1px 5px 2px rgb(91, 87, 87); margin: 3px; padding-top:0px; margin-bottom: 0px; padding-left:0px;">
+  <div class="container-fluid">
+    <h3 style="color: rgb(196, 188, 127); text-align: center; padding-top: 30px;">Translate from Arabic to Frensh</h3>      
+    
+  </div>
+</div>
+  <div class="jumbotron jumbotron" style="height: 330px;background:linear-gradient(135deg,rgb(52, 52, 48),rgb(80, 80, 80)); padding-top:-30px; margin: 0px 3px 0px 3px; padding-left:0px; margin-bottom: 0px;">
+  <div class="container-fluid">
+    <h3 style="color: rgb(218, 155, 8); display: inline;">Write And Translate    <h3 style="display: inline-block;color: #acacac;">Press Here</h3></h3>  <br>    
+<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">
+  Copy
+</button>
+
+<!-- The Modal -->
+<div  class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content" style="background:linear-gradient(135deg,rgb(130, 130, 130),rgb(80, 80, 80)); transition: .8s;">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 style="color: rgb(233, 231, 182);font-size: x-large;" class="modal-title">Wild Rift</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div style="color: white;" class="modal-body">
+        The message copied
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning text-dark" data-dismiss="modal">ok</button>
+      </div>
+
+    </div>
+  </div>
+</div>          <div class="form-group">
+  <label for="comment"></label>
+  <textarea class="form-control" rows="5" id="comment" style="background-color: #949393;"placeholder="Translate" ></textarea>
+</div>
+  </div>
+</div>
+<hr>
+<div class="jumbotron jumbotron" style="height: 100px;background:linear-gradient(135deg,rgb(66, 66, 66),rgb(45, 42, 42)); box-shadow: 1px 1px 5px 2px rgb(91, 87, 87); margin: 3px; padding-top:0px; margin-bottom: 0px; padding-left:0px;">
+  <div class="container-fluid">
+    <h3 style="color: rgb(196, 188, 127); text-align: center; padding-top: 30px;">Translate from Arabic to German</h3>      
+    
+  </div>
+</div>
+  <div class="jumbotron jumbotron" style="height: 330px;background:linear-gradient(135deg,rgb(52, 52, 48),rgb(80, 80, 80)); padding-top:-30px; margin: 0px 3px 0px 3px; padding-left:0px; margin-bottom: 0px;">
+  <div class="container-fluid">
+    <h3 style="color: rgb(218, 155, 8); display: inline;">Write And Translate     <h3 style="display: inline-block;color: #acacac;">Press Here</h3></h3>  <br>    
+<button type="button" class="btn btn-warning" data-toggle="modal" data-target="#myModal">
+  Copy
+</button>
+
+<!-- The Modal -->
+<div  class="modal" id="myModal">
+  <div class="modal-dialog">
+    <div class="modal-content" style="background:linear-gradient(135deg,rgb(130, 130, 130),rgb(80, 80, 80)); transition: .8s;">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 style="color: rgb(233, 231, 182);font-size: x-large;" class="modal-title">Wild Rift</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+
+      <!-- Modal body -->
+      <div style="color: white;" class="modal-body">
+        The message copied
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-warning text-dark" data-dismiss="modal">ok</button>
+      </div>
+
+    </div>
+  </div>
+</div>          <div class="form-group">
+  <label for="comment"></label>
+  <textarea class="form-control" rows="5" id="comment" style="background-color: #949393; " placeholder="Translate" ></textarea>
+</div>
+  </div>
+</div>
+  <div class="fixed-bg" style="height: 370px; background: url('images/alex-flores-nightbringeryasuo-alexflores.jpg') fixed top; background-size: cover;">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-8 mx-auto text-center">
+
+        </div>
+      </div>
+    </div>
+ <div class="container my-5">
+            <div class="row g-4 justify-content-center">
+                <div class="col-sm-4 col-10">
+                    <div class="card h-100 special-card" style="background:linear-gradient(135deg,rgb(83, 83, 83),rgb(45, 42, 42));color: #8c8c8c; box-shadow: 1px 1px 5px 2px rgb(91, 87, 87);">
+                        <div class="p-2">
+                            <img src="images/aatrox-lol-splash-art-uhdpaper.com-8K-357-wp.thumbnail.jpg" class="card-img-top" alt="..." style="height: 250px;">
+                        </div>
+
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: rgb(153, 155, 157);"><b><i>Aatrox</i></b></h5>
+                            <div class="d-flex">
+                                <a href="#" class="btn btn-warning text-dark d-inline-block ms-auto px-4">SHOW</a>
+                            </div>
+                            <p class="card-text mt-2">
+A fallen god of war, he fights not to win—but to end everything in blood and fire. ⚔️🩸
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-10">
+                    <div class="card h-100 special-card" style="background:linear-gradient(135deg,rgb(83, 83, 83),rgb(45, 42, 42));color: #8c8c8c; box-shadow: 1px 1px 5px 2px rgb(91, 87, 87);">
+                        <div class="p-2">
+                            <img src="images/garen-league-of-legends-darius-league-of-legends-digital-art-wallpaper-preview.jpg" class="card-img-top" alt="..." style="height: 250px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: rgb(153, 155, 157);"><b><i>Darius</i></b></h5>
+                            <div class="d-flex">
+                                <a href="#" class="btn btn-warning text-dark d-inline-block ms-auto px-4">SHOW</a>
+                            </div>
+                            <p class="card-text mt-2">
+Every step he takes turns the battlefield into an execution ground of blood and fear. 🪓
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-10">
+                    <div class="card h-100 special-card" style="background:linear-gradient(135deg,rgb(83, 83, 83),rgb(45, 42, 42));color: #8c8c8c; box-shadow: 1px 1px 5px 2px rgb(91, 87, 87);">
+                        <div class="p-2">
+                            <img src="images/swain-lol-splash-art-uhdpaper.com-4K-242-wp.thumbnail.jpg" class="card-img-top" alt="..." style="height: 250px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: rgb(153, 155, 157);"><b><i>Swain</i></b></h5>
+                            <div class="d-flex">
+                                <a href="#" class="btn btn-warning text-dark d-inline-block ms-auto px-4">SHOW</a>
+                            </div>
+                            <p class="card-text mt-2">
+Knowledge is power, and he controls both war and minds with dark vision. 🦅
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-4 mt-4 justify-content-center">
+                <div class="col-sm-4 col-10">
+                    <div class="card h-100 special-card" style="background:linear-gradient(135deg,rgb(83, 83, 83),rgb(45, 42, 42));color: #8c8c8c; box-shadow: 1px 1px 5px 2px rgb(91, 87, 87);">
+                        <div class="p-2">
+                            <img src="images/video-games-video-game-characters-summoner-s-rift-diana-league-of-legends-wallpaper-preview.jpg" class="card-img-top" alt="..." style="height: 250px; object-position: top;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: rgb(153, 155, 157);"><b><i>Diana</i></b></h5>
+                            <div class="d-flex">
+                                <a href="#" class="btn btn-warning text-dark d-inline-block ms-auto px-4">SHOW</a>
+                            </div>
+                            <p class="card-text mt-2">
+The moon guides her blade, and darkness answers her call with silent wrath. 🌙
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-10">
+                    <div class="card h-100 special-card" style="background:linear-gradient(135deg,rgb(83, 83, 83),rgb(45, 42, 42));color: #8c8c8c; box-shadow: 1px 1px 5px 2px rgb(91, 87, 87);">
+                        <div class="p-2">
+                            <img src="images/arcane-jinx-league-of-legends-league-of-legends-riot-games-4k-hd-wallpaper-thumb.jpg" class="card-img-top" alt="..." style="height: 250px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: rgb(153, 155, 157);"><b><i>Jinks</i></b></h5>
+                            <div class="d-flex">
+                                <a href="#" class="btn btn-warning text-dark d-inline-block ms-auto px-4">SHOW</a>
+                            </div>
+                            <p class="card-text mt-2">
+Chaos is her language, and destruction is her favorite game of madness and fire. 💥
+
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-10">
+                    <div class="card h-100 special-card" style="background:linear-gradient(135deg,rgb(83, 83, 83),rgb(45, 42, 42));color: #8c8c8c; box-shadow: 1px 1px 5px 2px rgb(91, 87, 87);">
+                        <div class="p-2">
+                            <img src="images/kayn-lol-splash-art-uhdpaper.com-4K-207-wp.thumbnail.jpg" class="card-img-top" alt="..." style="height: 250px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: rgb(153, 155, 157);"><b><i>Kayn</i></b></h5>
+                            <div class="d-flex">
+                                <a href="#" class="btn btn-warning text-dark d-inline-block ms-auto px-4">SHOW</a>
+                            </div>
+                            <p class="card-text mt-2">
+Walking the line between shadow and destruction, only one will survive in the end. 🌑
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row g-5 mt-4 justify-content-center">
+                <div class="col-sm-4 col-10 mb-5">
+                    <div class="card h-100 special-card" style="background:linear-gradient(135deg,rgb(83, 83, 83),rgb(45, 42, 42));color: #8c8c8c; box-shadow: 1px 1px 5px 2px rgb(91, 87, 87);">
+                        <div class="p-2">
+                            <img src="images/fiddlesticks-new-splash-art-update-uhdpaper.com-8K-7.1363-wp.thumbnail.jpg" class="card-img-top" alt="..." style="height: 250px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: rgb(153, 155, 157);"><b><i>Fiddlesticks</i></b></h5>
+                            <div class="d-flex">
+                                <a href="#" class="btn btn-warning text-dark d-inline-block ms-auto px-4 float-right">SHOW</a>
+                            </div>
+                            <p class="card-text mt-2">
+Fear itself whispers your name before you disappear into endless darkness. 👻
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-4 col-10 mb-5">
+                    <div class="card h-100 special-card" style="background:linear-gradient(135deg,rgb(83, 83, 83),rgb(45, 42, 42));color: #8c8c8c; box-shadow: 1px 1px 5px 2px rgb(91, 87, 87);">
+                        <div class="p-2">
+                            <img src="images/yone-lol-splash-art-uhdpaper.com-8K-7.2287-wp.thumbnail.jpg" class="card-img-top" alt="..." style="height: 250px;">
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: rgb(153, 155, 157);"><b><i>Yone</i></b></h5>
+                            <div class="d-flex">
+                                <a href="#" class="btn btn-warning text-dark d-inline-block ms-auto px-4">SHOW</a>
+                            </div>
+                            <p class="card-text mt-2">
+Torn between life and death, he fights with steel and spirit without mercy. ⚔️
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="fixed-bg" style="height: 370px; background: url('images/wp12970206.jpg') fixed top; background-size: cover;">
+    <div class="container h-100">
+      <div class="row h-100 align-items-center">
+        <div class="col-lg-8 mx-auto text-center">
+
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div class="jumbotron jumbotron-fluid bg-secondary  " style="height: 110px;padding-top:0px; background:linear-gradient(135deg,rgb(83, 83, 83),rgb(45, 42, 42));color: #8c8c8c; padding-left:0px;">
+  <div class="container-fluid">
+    <h3 style="color: rgb(255, 255, 255); text-align: center; padding-top: 40px;">Thanks For</h3>      
+    
+  </div>
+</div>
+ <div class="container 5  px-5 " style="margin-top: 80px;">
+            <div class="row justify-content-center" style="gap: 50px;">
+                <div class="col-sm-3 col-8 con11">
+                    <div class="card bg-dark text-white custom-card con" style="height: 250px;box-shadow: 1px 1px 5px 2px rgb(91, 87, 87); border-radius: 20px;">
+                        <img src="images/dress-code-in-an-it-company-how-a-developer-should-dress-for-work.png" class="card-img h-100" alt="..." style="border-radius: 20px;">
+                        <div class="card-img-overlay h-100"
+                            style="background-color: rgba(43, 43, 43, 0.664);border-radius: 20px;">
+                            <h5 class="card-title " style="font-size:15px;color: rgb(230, 230, 230)"><b><i>All Thanks
+                                        And Appreciation</i></b></h5>
+                            <p class="card-text" style="color: rgb(230, 230, 230)">🕔 June 22, 2023</p>
+                            <img src="images/dress-code-in-an-it-company-how-a-developer-should-dress-for-work.png" alt="..."
+                                class="rounded-pill border border-2 border-white position-absolute"
+                                style="width: 70px; height: 90px; bottom: 55px; left: 20px; object-fit: cover; object-position: center;" />
+                            <div style="position: absolute; bottom: 5px; left: 20px;">
+                                <p class="mb-1 fw-semibold" style="font-size: 1rem;">Osama ahmed</p>
+                                <p class="mb-0 fst-italic" style="font-size: 0.9rem;">Director Of UI/UX</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 col-8 con11">
+                    <div class="card bg-dark text-white custom-card con" style="height: 250px;box-shadow: 1px 1px 5px 2px rgb(91, 87, 87); border-radius: 20px;">
+                        <img src="images/portrait-elegant-professional-businessman_23-2150917240.avif" class="card-img h-100" alt="..." style="border-radius: 20px;">
+                        <div class="card-img-overlay h-100"
+                            style="background-color: rgba(43, 43, 43, 0.664);border-radius: 20px;">
+                            <h5 class="card-title " style="font-size:15px;color: rgb(230, 230, 230)"><b><i>All Thanks
+                                        And
+                                        Appreciation</i></b></h5>
+                            <p class="card-text" style="color: rgb(230, 230, 230)">🕔 June 22, 2023</p>
+                            <img src="images/portrait-elegant-professional-businessman_23-2150917240.avif" alt="..."
+                                class="rounded-pill border border-2 border-white position-absolute"
+                                style="width: 70px; height: 90px; bottom: 55px; left: 20px; object-fit: cover; object-position: right;" />
+                            <div style="position: absolute; bottom: 5px; left: 20px;">
+                                <p class="mb-1 fw-semibold" style="font-size: 1rem;">Ahmed ali</p>
+                                <p class="mb-0 fst-italic" style="font-size: 0.9rem;">Content Creator</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-3 col-8 con11">
+                    <div class="card bg-dark text-white custom-card con" style="height: 250px;box-shadow: 1px 1px 5px 2px rgb(91, 87, 87); border-radius: 20px;">
+                        <img src="images/navy-charcoal-foundation-suits-business.webp" class="card-img h-100" alt="..." style="border-radius: 20px;">
+                        <div class="card-img-overlay h-100"
+                            style="background-color: rgba(43, 43, 43, 0.664);border-radius: 20px;">
+                            <h5 class="card-title " style="font-size:15px;color: rgb(230, 230, 230)"><b><i>All Thanks
+                                        And
+                                        Appreciation</i></b></h5>
+                            <p class="card-text" style="color: rgb(230, 230, 230)">🕔 June 22, 2023</p>
+                            <img src="images/navy-charcoal-foundation-suits-business.webp" alt="..."
+                                class="rounded-pill border border-2 border-white position-absolute"
+                                style="width: 70px; height: 90px; bottom: 55px; left: 20px; object-fit: cover; object-position: center;" />
+                            <div style="position: absolute; bottom: 5px; left: 20px;">
+                                <p class="mb-1 fw-semibold" style="font-size: 1rem;">Eslam Morgan</p>
+                                <p class="mb-0 fst-italic" style="font-size: 0.9rem;">Web Developer</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <h3 class="text-center" style="color:rgb(159, 160, 161) ;margin-top: 100px;"><b><i>Restaurant News</i></b></h3>
+        <div class="container-md wider-container px-0 px-md-3" style="margin-top: 40px;">
+            <div class="card mb-3 w-100 px-2" style="">
+                <div style="background:linear-gradient(135deg,rgb(83, 83, 83),rgb(45, 42, 42));color: #b7b7b7; box-shadow: 1px 1px 5px 2px rgb(91, 87, 87); " class="row g-0 h-100">
+                    <div class="col-md-4 clip-slant order-1 order-md-2 d-none d-md-block">
+                        <div class="special-image special-image1 min-vh-25 h-100"></div>
+                    </div>
+                    <div class="col-md-4 order-1 order-md-2 d-md-none d-block clip-rect">
+                        <div class="special-image special-image1 "></div>
+                    </div>
+                    <div class="col-md-8 d-flex order-2 order-md-1">
+                        <div class="card-body my-auto" >
+                            <h3 class="card-title text-warning fs-3"><b><i>Podcast Title</i></b></h3>
+                            <p class="card-text border-bottom d-inline-block border-4 border-warning pb-2"
+                                style="font-size: 12px;">
+                                <b>Mon.May 25th 2020</b>
+                            </p>
+                            <p class="card-text fs-6 d-none d-md-block">
+                                In Our Kitchen, Passion Doesn’t Stop At Taste Alone; It Extends To Include Innovation
+                                And Renewal In
+                                Every Detail Of Our
+                                Dishes And Services. We Are Always Keen To Provide Everything New For Lovers Of
+                                Distinctive Taste,
+                                From Seasonal Dishes
+                                Made With The Finest Fresh Ingredients, To The Special Offers We Constantly Prepare For
+                                You To Enjoy
+                                A Unique And
+                                Unforgettable Experience. Follow Our News Section To Stay Up-To-Date On The Latest
+                                Updates, Whether
+                                It’s New Recipes,
+                                Special Events, Or Innovative Product Launches That Suit All Tastes. We Are Here To
+                                Share Our
+                                Passion For Food And
+                                Provide You With An Exceptional Experience With Every Visit And Every Dish.
+                            </p>
+                            <p class="card-text  d-md-none d-block" style="font-size: 13px;">
+                                In Our Kitchen, Passion Doesn’t Stop At Taste Alone; It Extends To Include Innovation
+                                And Renewal In
+                                Every Detail Of
+                                Our
+                                Dishes And Services. We Are Always Keen To Provide Everything New For Lovers Of
+                                Distinctive Taste,
+                                From Seasonal
+                                Dishes
+                                Made With The Finest Fresh Ingredients, To The Special Offers We Constantly Prepare For
+                                You To Enjoy
+                                A Unique And
+                                Unforgettable Experience. Follow Our News Section To Stay Up-To-Date On The Latest
+                                Updates, Whether
+                                It’s New Recipes,
+                                Special Events, Or Innovative Product Launches That Suit All Tastes. We Are Here To
+                                Share Our
+                                Passion For Food And
+                                Provide You With An Exceptional Experience With Every Visit And Every Dish.
+                            </p>
+                            <a href="#"
+                                class="btn btn-warning text-dark d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6">🎙
+                                Podcast</a>
+                            <a href="#"
+                            
+                                class="btn btn-warning text-dark d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6">🕔
+                                43 mins<a/>
+                            <a href="#"
+                                class="btn btn-warning text-dark d-inline-block ms-auto px-2 mt-3 special-btn fs-6">▶
+                                Play
+                                Episode</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3 w-100 px-2 "
+                style="margin-top: 40px;">
+                <div class="row g-0 h-100" style=" background:linear-gradient(135deg,rgb(83, 83, 83),rgb(45, 42, 42));color: #afafaf; box-shadow: 1px 1px 5px 2px rgb(91, 87, 87);">
+                    <div class="col-md-4  order-1 order-md-1 d-none d-md-block clip-slant2">
+                        <div class="special-image special-image2 min-vh-25 h-100"></div>
+                    </div>
+                    <div class="col-md-4 order-1 order-md-1 d-md-none d-block clip-rect">
+                        <div class="special-image special-image2 "></div>
+                    </div>
+                    <div class="col-md-8 d-flex order-2 order-md-1">
+                        <div class="card-body my-auto">
+                            <h3 class="card-title text-warning fs-3"><b><i>Podcast Title</i></b></h3>
+                            <p class="card-text border-bottom d-inline-block border-4 border-warning pb-2"
+                                style="font-size: 12px;">
+                                <b>Mon.May 25th 2020</b>
+                            </p>
+                            <p class="card-text fs-6 d-none d-md-block">
+                                In Our Kitchen, Passion Doesn’t Stop At Taste Alone; It Extends To Include Innovation
+                                And Renewal In
+                                Every Detail Of Our
+                                Dishes And Services. We Are Always Keen To Provide Everything New For Lovers Of
+                                Distinctive Taste,
+                                From Seasonal Dishes
+                                Made With The Finest Fresh Ingredients, To The Special Offers We Constantly Prepare For
+                                You To Enjoy
+                                A Unique And
+                                Unforgettable Experience. Follow Our News Section To Stay Up-To-Date On The Latest
+                                Updates, Whether
+                                It’s New Recipes,
+                                Special Events, Or Innovative Product Launches That Suit All Tastes. We Are Here To
+                                Share Our
+                                Passion For Food And
+                                Provide You With An Exceptional Experience With Every Visit And Every Dish.
+                            </p>
+                            <p class="card-text  d-md-none d-block" style="font-size: 13px;">
+                                In Our Kitchen, Passion Doesn’t Stop At Taste Alone; It Extends To Include Innovation
+                                And Renewal In
+                                Every Detail Of
+                                Our
+                                Dishes And Services. We Are Always Keen To Provide Everything New For Lovers Of
+                                Distinctive Taste,
+                                From Seasonal
+                                Dishes
+                                Made With The Finest Fresh Ingredients, To The Special Offers We Constantly Prepare For
+                                You To Enjoy
+                                A Unique And
+                                Unforgettable Experience. Follow Our News Section To Stay Up-To-Date On The Latest
+                                Updates, Whether
+                                It’s New Recipes,
+                                Special Events, Or Innovative Product Launches That Suit All Tastes. We Are Here To
+                                Share Our
+                                Passion For Food And
+                                Provide You With An Exceptional Experience With Every Visit And Every Dish.
+                            </p>
+                            <a style="color:black ;" href="#"
+                                class="btn btn-warning text-dark d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6">🎙
+                                Podcast</a>
+                            <a href="#"
+                                class="btn btn-warning text-dark d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6">🕔
+                                43
+                                mins</a>
+                            <a href="#"
+                                class="btn btn-warning text-dark d-inline-block ms-auto px-2 mt-3 special-btn fs-6">▶
+                                Play
+                                Episode</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card mb-3 w-100 px-2">
+                <div class="row g-0 h-100" style="background:linear-gradient(135deg,rgb(83, 83, 83),rgb(45, 42, 42));color: #afafaf; box-shadow: 1px 1px 5px 2px rgb(91, 87, 87);">
+                    <div class="col-md-4 clip-slant order-1 order-md-2 d-none d-md-block">
+                        <div class="special-image special-image3 min-vh-25 h-100"></div>
+                    </div>
+                    <div class="col-md-4 order-1 order-md-2 d-md-none d-block clip-rect">
+                        <div class="special-image special-image3 "></div>
+                    </div>
+                    <div class="col-md-8 d-flex order-2 order-md-1">
+                        <div class="card-body my-auto">
+                            <h3 class="card-title text-warning fs-3"><b><i>Podcast Title</i></b></h3>
+                            <p class="card-text border-bottom d-inline-block border-4 border-warning pb-2" style="font-size: 12px;">
+                                <b>Mon.May 25th 2020</b>
+                            </p>
+                            <p class="card-text fs-6 d-none d-md-block">
+                                In Our Kitchen, Passion Doesn’t Stop At Taste Alone; It Extends To Include Innovation
+                                And Renewal In
+                                Every Detail Of Our
+                                Dishes And Services. We Are Always Keen To Provide Everything New For Lovers Of
+                                Distinctive Taste,
+                                From Seasonal Dishes
+                                Made With The Finest Fresh Ingredients, To The Special Offers We Constantly Prepare For
+                                You To Enjoy
+                                A Unique And
+                                Unforgettable Experience. Follow Our News Section To Stay Up-To-Date On The Latest
+                                Updates, Whether
+                                It’s New Recipes,
+                                Special Events, Or Innovative Product Launches That Suit All Tastes. We Are Here To
+                                Share Our
+                                Passion For Food And
+                                Provide You With An Exceptional Experience With Every Visit And Every Dish.
+                            </p>
+                            <p class="card-text  d-md-none d-block" style="font-size: 13px;">
+                                In Our Kitchen, Passion Doesn’t Stop At Taste Alone; It Extends To Include Innovation
+                                And Renewal In
+                                Every Detail Of
+                                Our
+                                Dishes And Services. We Are Always Keen To Provide Everything New For Lovers Of
+                                Distinctive Taste,
+                                From Seasonal
+                                Dishes
+                                Made With The Finest Fresh Ingredients, To The Special Offers We Constantly Prepare For
+                                You To Enjoy
+                                A Unique And
+                                Unforgettable Experience. Follow Our News Section To Stay Up-To-Date On The Latest
+                                Updates, Whether
+                                It’s New Recipes,
+                                Special Events, Or Innovative Product Launches That Suit All Tastes. We Are Here To
+                                Share Our
+                                Passion For Food And
+                                Provide You With An Exceptional Experience With Every Visit And Every Dish.
+                            </p>
+                            <a href="#" class="btn btn-warning text-dark d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6">🎙
+                                Podcast</a>
+                            <a href="#" class="btn btn-warning text-dark d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6">🕔
+                                43 mins</a>
+                            <a href="#" class="btn btn-warning text-dark d-inline-block ms-auto px-2 mt-3 special-btn fs-6">▶
+                                Play
+                                Episode</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <div class="card mb-3 w-100 px-2 margin-top: 40px;">
+            <div class="row g-0 h-100" style="background:linear-gradient(135deg,rgb(83, 83, 83),rgb(45, 42, 42));color: #acacac; box-shadow: 1px 1px 5px 2px rgb(91, 87, 87);">
+                <div class="col-md-4  order-1 order-md-1 d-none d-md-block clip-slant2">
+                    <div class="special-image special-image4 min-vh-25 h-100"></div>
+                </div>
+                <div class="col-md-4 order-1 order-md-1 d-md-none d-block clip-rect">
+                    <div class="special-image special-image4 "></div>
+                </div>
+                <div class="col-md-8 d-flex order-2 order-md-1">
+                    <div class="card-body my-auto">
+                        <h3 class="card-title text-warning fs-3"><b><i>Podcast Title</i></b></h3>
+                        <p class="card-text border-bottom d-inline-block border-4 border-warning pb-2" style="font-size: 12px;">
+                            <b>Mon.May 25th 2020</b>
+                        </p>
+                        <p class="card-text fs-6 d-none d-md-block">
+                            In Our Kitchen, Passion Doesn’t Stop At Taste Alone; It Extends To Include Innovation
+                            And Renewal In
+                            Every Detail Of Our
+                            Dishes And Services. We Are Always Keen To Provide Everything New For Lovers Of
+                            Distinctive Taste,
+                            From Seasonal Dishes
+                            Made With The Finest Fresh Ingredients, To The Special Offers We Constantly Prepare For
+                            You To Enjoy
+                            A Unique And
+                            Unforgettable Experience. Follow Our News Section To Stay Up-To-Date On The Latest
+                            Updates, Whether
+                            It’s New Recipes,
+                            Special Events, Or Innovative Product Launches That Suit All Tastes. We Are Here To
+                            Share Our
+                            Passion For Food And
+                            Provide You With An Exceptional Experience With Every Visit And Every Dish.
+                        </p>
+                        <p class="card-text  d-md-none d-block" style="font-size: 13px;">
+                            In Our Kitchen, Passion Doesn’t Stop At Taste Alone; It Extends To Include Innovation
+                            And Renewal In
+                            Every Detail Of
+                            Our
+                            Dishes And Services. We Are Always Keen To Provide Everything New For Lovers Of
+                            Distinctive Taste,
+                            From Seasonal
+                            Dishes
+                            Made With The Finest Fresh Ingredients, To The Special Offers We Constantly Prepare For
+                            You To Enjoy
+                            A Unique And
+                            Unforgettable Experience. Follow Our News Section To Stay Up-To-Date On The Latest
+                            Updates, Whether
+                            It’s New Recipes,
+                            Special Events, Or Innovative Product Launches That Suit All Tastes. We Are Here To
+                            Share Our
+                            Passion For Food And
+                            Provide You With An Exceptional Experience With Every Visit And Every Dish.
+                        </p>
+                        <a href="#" class="btn btn-warning text-dark d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6">🎙
+                            Podcast</a>
+                        <a href="#" class="btn btn-warning text-dark d-inline-block ms-auto px-2 mt-3 special-btn me-1 fs-6">🕔
+                            43
+                            mins</a>
+                        <a href="#" class="btn btn-warning text-dark d-inline-block ms-auto px-2 mt-3 special-btn fs-6">▶
+                            Play
+                            Episode</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+    <section>
+        <div class="container w-75" style="margin-top: 100px;">
+            <div class="row justify-content-center">
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+                    <div class="card border-secondary special-card2"
+                        style="background:linear-gradient(135deg,rgb(83, 83, 83),rgb(45, 42, 42));color: #acacac; box-shadow: 1px 1px 5px 2px rgb(91, 87, 87); width: 13rem; box-shadow: 1px 1px 3o 15px 3px rgb(150, 150, 150); height: 190px;">
+                        <div class="card-body text-center"style="background:linear-gradient(135deg,rgb(83, 83, 83),rgb(45, 42, 42));color: #acacac; box-shadow: 1px 1px 5px 2px rgb(91, 87, 87);">
+                            <h4 class="card-title fs-6" style="color: slategray;">
+                                <b><i>Subscribe Now</i></b>
+                            </h4>
+                            <img src="images/free-facebook-3d-icon-png-download-4602444.webp" alt="" class="img-fluid d-block mx-auto "
+                                style="width: 70px; height: 70px;margin-top: 16px; ">
+                            <a href="#" class="d-inline-block mt-3" style="color: #949393; text-decoration: none;">Go To Link</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+                    <div class="card border-secondary special-card2"
+                        style="background:linear-gradient(135deg,rgb(83, 83, 83),rgb(45, 42, 42));color: #acacac; box-shadow: 1px 1px 5px 2px rgb(91, 87, 87); width: 13rem; box-shadow: 1px 1px 3o 15px 3px rgb(150, 150, 150); height: 190px;">
+                        <div class="card-body text-center"style="background:linear-gradient(135deg,rgb(83, 83, 83),rgb(45, 42, 42));color: #acacac; box-shadow: 1px 1px 5px 2px rgb(91, 87, 87);">
+                            <h4 class="card-title fs-6" style="color: slategray;">
+                                <b><i>Subscribe Now</i></b>
+                            </h4>
+                            <img src="images/free-linkedin-3d-icon-png-download-4602452.webp" alt="" class="img-fluid d-block mx-auto "
+                                style="width: 70px; height: 70px;margin-top: 16px; ">
+                            <a href="#" class="d-inline-block mt-3" style="color: #949393; text-decoration: none;">Go To Link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center">
+                    <div class="card border-secondary special-card2"
+                        style="background:linear-gradient(135deg,rgb(83, 83, 83),rgb(45, 42, 42));color: #acacac; box-shadow: 1px 1px 5px 2px rgb(91, 87, 87); width: 13rem; box-shadow: 1px 1px 3o 15px 3px rgb(150, 150, 150); height: 190px;">
+                        <div class="card-body text-center"style="background:linear-gradient(135deg,rgb(83, 83, 83),rgb(45, 42, 42));color: #acacac; box-shadow: 1px 1px 5px 2px rgb(91, 87, 87);">
+                            <h4 class="card-title fs-6" style="color: slategray;">
+                                <b><i>Subscribe Now</i></b>
+                            </h4>
+                            <img src="images/free-twitter-logo-5476203-4602454.webp" alt="" class="img-fluid d-block mx-auto "
+                                style="width: 70px; height: 70px;margin-top: 16px; ">
+                            <a href="#" class="d-inline-block mt-3" style="color: #949393; text-decoration: none;">Go To Link</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div style="border-radius: 30px;" class="col-sm-6 col-md-4 col-lg-3 mb-4 d-flex justify-content-center ">
+                    <div class="card border-secondary special-card2"
+                        style="background:linear-gradient(135deg,rgb(83, 83, 83),rgb(45, 42, 42));color: #acacac; box-shadow: 1px 1px 5px 2px rgb(91, 87, 87); width: 13rem; box-shadow: 1px 1px 3o 15px 3px rgb(150, 150, 150); height: 190px;">
+                        <div class="card-body text-center">
+                            <h4 class="card-title fs-6" style="color: slategray;">
+                                <b><i>Subscribe Now</i></b>
+                            </h4>
+                            <img src="images/4602455.webp" alt="" class="img-fluid d-block mx-auto "
+                                style="width: 70px; height: 70px;margin-top: 16px; ">
+                            <a href="#" class="d-inline-block mt-3" style="color: #949393; text-decoration: none;">Go To Link</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container-fluid" style="margin-top: 100px; background:linear-gradient(135deg,rgb(83, 83, 83),rgb(45, 42, 42));color: #acacac; box-shadow: 1px 1px 5px 2px rgb(91, 87, 87); ">
+            <br>
+            <hr>
+            <div class="container py-3 d-none d-sm-block">
+                <div class="row text-center align-items-center mb-2">
+                    <div class="col-sm-4">
+                        <img src="images/abfa0b16dbe417f8cfe1708daefc329fd005ae6d-600x600.png" alt="" style="width:200px;height:200px;">
+                        <div class="fs-5" style="color:rgb(192, 192, 192); margin-top:10px;">
+                            <b><i>Voilbare</i></b>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="images/2d1a390c1b5a33eee664455dc932b8f97f62563b-1080x1080-removebg-preview.png"  alt="" style=" width:200px;height:200px; ">
+                        <div class="fs-5" style="color:rgb(196, 198, 201); margin-top:10px;">
+                            <b><i>Rakan</i></b>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <img src="images/282d5dbe80b19586b66deb1fa16c4b508ee2c59d-1080x1080.png" alt="" style="width:200px;height:200px;">
+                        <div class="fs-5" style="color:rgb(198, 199, 201); margin-top:10px;">
+                            <b><i>Xayah</i></b>
+                        </div>
+                    </div>
+                </div>
+                <hr style="border-color:#5a6670; margin: 8px 0;">
+                <div class="row text-center mt-2">
+                    <div class="col-sm-4">
+                        <p style="color:rgb(211, 211, 211); margin:2px 0;">Tel: 000-000-000</p>
+                        <p style="color:rgb(205, 205, 205); margin:2px 0;">Address: EGYPT</p>
+                        <p style="color:rgb(200, 202, 203); margin:2px 0;">Fax: 000-000-000</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p style="color:rgb(191, 193, 194); margin:2px 0;">Visit Us</p>
+                        <p style="color:rgb(196, 197, 199); margin:2px 0;">Take A Look</p>
+                        <p style="color:rgb(191, 192, 194); margin:2px 0;">Your Health Is More Important</p>
+                    </div>
+                    <div class="col-sm-4">
+                        <p style="color:rgb(191, 192, 193); margin:2px 0;">Services For All</p>
+                        <p style="color:rgb(197, 197, 198); margin:2px 0;">Provide Best Services</p>
+                        <p style="color:rgb(192, 194, 197); margin:2px 0;">You Will Be Better Than Before</p>
+                    </div>
+                </div>
+            </div>
+            <hr style="margin:10px 0;">
+            <h5 class="text-center text-warning" style="margin: 0;">
+                <b style="color: rgb(206, 206, 149);">© 2025 FoodExpress. All Rights Reserved. Designed By Eng/ Eslam Morgan</b>
+            </h5><br>
+        </div>
+    </footer>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <script src="js/jquery-3.7.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.js"></script>
+  
+  <script>
+const loginBtn = document.getElementById('loginBtn');
+const loginModal = document.getElementById('loginModal');
+const closeModal = document.getElementById('closeModal');
+const loginForm = document.getElementById('loginForm');
+
+loginBtn.addEventListener('click', function() {
+    loginModal.style.display = 'flex';
+});
+
+closeModal.addEventListener('click', function() {
+    loginModal.style.display = 'none';
+});
+
+loginModal.addEventListener('click', function(e) {
+    if (e.target === loginModal) {
+        loginModal.style.display = 'none';
+    }
+});
+
+loginForm.addEventListener('submit', function(e) {
+    e.preventDefault();
+    alert('تم النقر على تسجيل الدخول - يمكنك إضافة منطق التسجيل هنا');
+    loginModal.style.display = 'none';
+});</script>
+  </body>
+</html>
